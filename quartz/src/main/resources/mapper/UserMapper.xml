@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.he.quartz.dao.UserDao">
+
+    <insert id="insert" parameterType="com.he.quartz.model.User">
+       insert into tb_user(id,name) value (#{user.id},#{user.name});
+    </insert>
+
+</mapper>
